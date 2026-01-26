@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![ZetaGo-Aurum](https://img.shields.io/badge/ZetaGo-Aurum-Socket-gold?style=for-the-badge&logo=whatsapp&logoColor=white)
+![ZetaGo-Aurum](https://img.shields.io/badge/ZetaGo--Aurum--Socket-v2.0.3-gold?style=for-the-badge&logo=whatsapp&logoColor=white)
 ![Version](https://img.shields.io/badge/Version-2.0.3-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
@@ -59,7 +59,7 @@ yarn add @zetagoaurum-socket/zetago-aurum-socket
 Simply import `makeWASocket` exactly as you would with standard Baileys. The enhancements work automagically in the background.
 
 ```javascript
-const { default: makeWASocket, useMultiFileAuthState } = require('@Zacky-Tzy/ZetaGo-Aurum-Socket');
+const { default: makeWASocket, useMultiFileAuthState } = require('@ZetaGo-Aurum/baileys-V1');
 
 async function connectToWhatsApp() {
     const { state, saveCreds } = await useMultiFileAuthState('auth_info_baileys');

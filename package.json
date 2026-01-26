@@ -12,9 +12,9 @@
         "botwa",
         "stvnnvs"
     ],
-    "homepage": "https://github.com/Zacky-Tzy/baileys-V1",
+    "homepage": "https://github.com/ZetaGo-Aurum/baileys-V1",
     "repository": {
-        "url": "https://github.com/Zacky-Tzy/baileys-V1"
+        "url": "https://github.com/ZetaGo-Aurum/baileys-V1"
     },
     "license": "MIT",
     "author": "ZackyOffC",
@@ -52,7 +52,7 @@
         "futoin-hkdf": "^1.5.1",
         "libphonenumber-js": "^1.10.20",
         "lodash": "^4.17.21",
-        "libsignal": "github:Zacky-Tzy/libsignal-node-V1",
+        "libsignal": "github:ZetaGo-Aurum/libsignal-node-V1",
         "music-metadata": "^7.12.3",
         "node-cache": "^5.1.2",
         "node-fetch": "^2.6.1",
