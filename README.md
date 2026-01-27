@@ -46,13 +46,13 @@ We have rebuilt the core connection logic to ensure your bot stays online, avoid
 Install the package directly from your project:
 
 ```bash
-npm install zetago-aurum-socket
+npm install @zetagoaurum-socket/zetago-aurum-socket
 # or install directly from GitHub (Recommended if NPM fails)
 npm install github:ZetaGo-Aurum/baileys-V1
 # or
 yarn add github:ZetaGo-Aurum/baileys-V1
 # or
-yarn add zetago-aurum-socket
+yarn add @zetagoaurum-socket/zetago-aurum-socket
 ```
 
 ## 🛠️ Usage
