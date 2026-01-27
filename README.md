@@ -24,20 +24,22 @@ We have rebuilt the core connection logic to ensure your bot stays online, avoid
 ## 🚀 Key Features
 
 ### 🛡️ **Unmatched Security (Anti-Ban)**
-*   **Browser Masquerading**: Identifies as a legitimate Chrome browser on Windows/Ubuntu to avoid detection.
-*   **Clean Connection**: Removed all legacy "auto-follow" bloatware and malicious tracking codes.
-*   **Privacy First**: No hidden metrics or data collection.
-*   **Auto Safe Contact**: Automatically saves new interactants to `user_contact.json` to prevent spam flagging (Zero-Ban Tech).
+*   **Browser Masquerading**: Identifies as a legitimate Chrome browser on Windows (`Windows`, `Chrome`, `22.0.0.0`) instead of a generic bot signature.
+*   **Traffic Jitter**: Implemented randomized timing for "keep-alive" pings (1-6s jitter) to disrupt robotic traffic pattern analysis.
+*   **Human Latency**: Increased default timeouts (`connectTimeoutMs: 60s`) to mimic human network behavior.
+*   **Trust Score**: Enabled `syncFullHistory` and `generateHighQualityLinkPreview` to behave more like a legitimate "Companion" device.
+
+### 🔗 **Robust Custom Pairing**
+*   **Universal Compatibility**: Custom pairing code input is now auto-sanitized (removes non-alphanumeric chars) and normalized.
+*   **Flexibility**: Works seamlessly with any pairing number or custom key format.
 
 ### 🤖 **AI-Enhanced Humanization**
-*   **Smart Jitter**: Every message is sent with a micro-randomized delay (0.5s - 1.5s) to mimic human typing speed.
-*   **AI Badges**: Automatically injects `biz_bot: '1'` tags into messages, giving your bot legitimate "AI" branding where supported.
-*   **Anti-Spam Optimization**: Packet structure specifically tuned to avoid spam filters.
+*   **Smart Jitter**: Every packet is sent with micro-randomized delays to mimic human interaction.
+*   **Clean Fingerprint**: Removed all legacy tracking codes and "bot" markers.
 
 ### ⚡ **Professional Performance**
-*   **Anti-Crash Architecture**: Global error handlers prevent the process from dying on unhandled rejections.
-*   **High Stability**: Optimized `makeWASocket` configuration for long-running sessions.
-*   **Multimedia Support**: Full support for interactive buttons, lists, and high-quality media uploads.
+*   **Anti-Crash Architecture**: Global error handlers prevent the process from dying.
+*   **High Stability**: Optimized for long-running sessions with automatic reconnection logic.
 
 ---
 
@@ -60,16 +62,22 @@ yarn add @zetagoaurum-socket/zetago-aurum-socket
 Simply import `makeWASocket` exactly as you would with standard Baileys. The enhancements work automagically in the background.
 
 ```javascript
-const { default: makeWASocket, useMultiFileAuthState } = require('@ZetaGo-Aurum/baileys-V1');
+const { default: makeWASocket, useMultiFileAuthState } = require('@zetagoaurum-socket/zetago-aurum-socket');
 
 async function connectToWhatsApp() {
     const { state, saveCreds } = await useMultiFileAuthState('auth_info_baileys');
 
     const sock = makeWASocket({
         auth: state,
-        printQRInTerminal: true,
-        // The library automatically handles browser masquerading!
+        printQRInTerminal: !usePairingCode, // Set to false if using pairing code
+        // Browser masquerading is handled automatically!
     });
+
+    if (usePairingCode && !sock.authState.creds.registered) {
+        // Pairing code is now robust and handles formatting automatically!
+        const code = await sock.requestPairingCode('6281234567890');
+        console.log(`Pairing code: ${code}`);
+    }
 
     sock.ev.on('creds.update', saveCreds);
 
