@@ -17,7 +17,7 @@
         "url": "https://github.com/ZetaGo-Aurum/baileys-V1"
     },
     "license": "MIT",
-    "author": "ZackyOffC",
+    "author": "ZetaGO-Aurum",
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
     "files": [
