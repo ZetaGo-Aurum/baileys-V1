@@ -2,8 +2,8 @@
 
 <div align="center">
 
-![ZetaGo-Aurum](https://img.shields.io/badge/ZetaGo--Aurum--Socket-v2.0.3-gold?style=for-the-badge&logo=whatsapp&logoColor=white)
-![Version](https://img.shields.io/badge/Version-2.0.3-blue?style=for-the-badge)
+![ZetaGo-Aurum](https://img.shields.io/badge/ZetaGo--Aurum--Socket-v2.0.4-gold?style=for-the-badge&logo=whatsapp&logoColor=white)
+![Version](https://img.shields.io/badge/Version-2.0.4-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 **The Ultimate WhatsApp Socket Connection Library**
