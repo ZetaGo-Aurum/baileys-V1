@@ -27,6 +27,7 @@ We have rebuilt the core connection logic to ensure your bot stays online, avoid
 *   **Browser Masquerading**: Identifies as a legitimate Chrome browser on Windows/Ubuntu to avoid detection.
 *   **Clean Connection**: Removed all legacy "auto-follow" bloatware and malicious tracking codes.
 *   **Privacy First**: No hidden metrics or data collection.
+*   **Auto Safe Contact**: Automatically saves new interactants to `user_contact.json` to prevent spam flagging (Zero-Ban Tech).
 
 ### 🤖 **AI-Enhanced Humanization**
 *   **Smart Jitter**: Every message is sent with a micro-randomized delay (0.5s - 1.5s) to mimic human typing speed.
