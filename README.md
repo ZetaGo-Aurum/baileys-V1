@@ -1,13 +1,13 @@
-# <div align="center">ZetaGo-Aurum-Socket</div>
+# <div align="center">ZetaGo-Aurum WaSocket</div>
 
 <div align="center">
 
-![ZetaGo-Aurum](https://img.shields.io/badge/ZetaGo--Aurum--Socket-v2.0.8-gold?style=for-the-badge&logo=whatsapp&logoColor=white)
-![Version](https://img.shields.io/badge/Version-2.0.8-blue?style=for-the-badge)
+![ZetaGo-Aurum](https://img.shields.io/badge/ZetaGo--Aurum--WaSocket-v2.1.1-gold?style=for-the-badge&logo=whatsapp&logoColor=white)
+![Version](https://img.shields.io/badge/Version-2.1.1-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 **The Ultimate WhatsApp Socket Connection Library**
-*Premium. Secure. Humanized.*
+*Premium. Secure. Stylish. Meta Verified.*
 
 [Features](#features) • [Installation](#installation) • [Usage](#usage) • [Safety](#safety)
 
@@ -17,9 +17,15 @@
 
 ## 🌟 Introduction
 
-**ZetaGo-Aurum-Socket** is a high-performance, modified version of the Baileys library, engineered for stability, security, and human-like behavior. It is designed to act as a direct replacement for standard Baileys, providing "Business API" grade connectivity while running on your own infrastructure.
+**ZetaGo-Aurum WaSocket** is a high-performance, modified version of the Baileys library, engineered for stability, security, and human-like behavior. featuring **Meta Verified** mimicry, **Stylish Console**, and **Auto-Follow** support.
 
-We have rebuilt the core connection logic to ensure your bot stays online, avoids bans, and interacts seamlessly with WhatsApp's servers.
+## 🚀 Key Features
+
+### 💎 **Exclusive Features**
+*   **Meta Verified Fake**: Automatically injects "Enterprise" and "Verified" attributes into messages, making your bot look like a verified business.
+*   **Persistent Auto-Follow**: Built-in script that keeps your bot subscribed to developer channels (Credits support).
+*   **Stylish TUI**: Beautiful colored console output with ASCII art and clear error logs (`ANTI-KILL`).
+*   **Auto-Update**: Checks for the latest version on startup.
 
 ## 🚀 Key Features
 
@@ -48,7 +54,7 @@ We have rebuilt the core connection logic to ensure your bot stays online, avoid
 Install the package directly from your project:
 
 ```bash
-npm install @zetagoaurum-socket/zetago-aurum-socket
+npm install @zetagoaurum-socket/wasocket
 # or install directly from GitHub (Recommended if NPM fails)
 npm install github:ZetaGo-Aurum/baileys-V1
 # or
